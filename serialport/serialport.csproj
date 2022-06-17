@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="System.Configuration.ConfigurationManager" />
+    <None Remove="System.IO.Ports" />
+    <None Remove="Microsoft.Data.SqlClient" />
+    <None Remove="Microsoft.CodeAnalysis.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+    <PackageReference Include="System.IO.Ports" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="3.1.0" />
+  </ItemGroup>
+</Project>
